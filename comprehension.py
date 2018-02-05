@@ -29,9 +29,9 @@ while guesses_taken < 6: #while loop that let's user take up to 6 guesses
         break #if number is corrected - stop guessing by getting out of the while loop
 
 if guess == number: #if while loop was ended by providing correct number
-    guesses_taken = str(guesses_taken) #converting variable "guesses_taken" to string (which is not really necessary here as it can happen implicitly too!)
+    guesses_taken = str(guesses_taken) #converting variable "guesses_taken" to string so it can be printed)
     print('Good job, ' + myName + '! You guessed my number in ' + guesses_taken + ' guesses!')#print
 
 if guess != number: #if while loop was ended by using all the guesses and not guessing the number
-    number = str(number) #converting variable "number" to string (which is not really necessary here as it can happen implicitly too!)
+    number = str(number) #converting variable "number" to string so it can be printed
     print('Nope. The number I was thinking of was ' + number) #print
